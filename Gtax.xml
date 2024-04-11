@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  
+  <xs:element name="Home">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="buttons">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="button" maxOccurs="2">
+                <xs:complexType>
+                  <xs:attribute name="Download" type="xs:string"/>
+                  <xs:attribute name="Play" type="xs:string"/>
+                  <xs:attribute name="link" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <xs:element name="menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="menuItem" minOccurs="7" maxOccurs="7">
+                <xs:complexType>
+                  <xs:attribute name="Media" type="xs:string"/>
+                  <xs:attribute name="Character" type="xs:string"/>
+                  <xs:attribute name="Review" type="xs:string"/>
+                  <xs:attribute name="FAQ" type="xs:string"/>
+                  <xs:attribute name="About Us" type="xs:string"/>
+                  <xs:attribute name="Sign Up" type="xs:string"/>
+                  <xs:attribute name="Log In" type="xs:string"/>
+                  <xs:attribute name="link" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+        <xs:element name="Media">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cards" maxOccurs="3">
+                <xs:complexType>
+                  <xs:attribute name="Character Cards" type="xs:string"/>
+                  <xs:attribute name="link" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

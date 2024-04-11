@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAQ </title>
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- css -->
+   <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    
+
+<section>
+    <h1 class="title">FAQ's</h1>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="/imagees/video2.mp4" type="video/mp4">
+      </video>
+       -->
+      <!-- Optional: some overlay text to describe the video -->
+      <!-- <div class="content">
+        <h1> GTA 6 </h1>
+        <p>The Queitions asked for there </p>
+         Use a button to pause/play the video with JavaScript -->
+        <!-- <button id="myBtn" onclick="myFunction()">Pause</button> --> 
+      </div> 
+        <nav class="navbar">
+            
+        </nav>
+    <div class="questions-container">
+        <div class="question">
+            <button>
+                <span>What is the latest installment in the Grand Theft Auto series?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>The latest released game is Grand Theft Auto V, with Grand Theft Auto Online still receiving updates.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>When is Grand Theft Auto 6 coming out?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>While not officially confirmed, Rockstar Games has announced a tentative release window of 2025.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Will Grand Theft Auto 6 be released on current-gen consoles (PS4, Xbox One)?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>It's unlikely. Development seems focused on next-gen hardware like PlayStation 5 and Xbox Series X/S.</p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Where will Grand Theft Auto 6 take place?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Leaks and rumors suggest a return to Vice City, inspired by modern-day Miami, with potential expansions to other locations.</p>
+        </div>
+        
+
+        <div class="question">
+          <button>
+              <span>How many playable characters will be in Grand Theft Auto 6?</span>
+              <i class="fas fa-chevron-down d-arrow"></i>
+          </button>
+          <p>Early reports hint at two protagonists, possibly a male and female with intertwined stories.</p>
+      </div>
+
+      <div class="question">
+        <button>
+            <span>What new features will be introduced in Grand Theft Auto 6?</span>
+            <i class="fas fa-chevron-down d-arrow"></i>
+        </button>
+        <p>Details are scarce, but rumors mention dynamic weather systems, evolving businesses, and deeper character customization.</p>
+    </div>
+
+    <div class="question">
+      <button>
+          <span>Will Grand Theft Auto Online be integrated with Grand Theft Auto 6?</span>
+          <i class="fas fa-chevron-down d-arrow"></i>
+      </button>
+      <p>Unclear, but Rockstar might offer separate experiences or some form of connection.</p>
+  </div>
+
+  <div class="question">
+    <button>
+        <span>What will be the system requirements for playing Grand Theft Auto 6 on PC?</span>
+        <i class="fas fa-chevron-down d-arrow"></i>
+    </button>
+    <p>Too early to tell, but expect demanding specifications due to the anticipated graphical advancements.</p>
+</div>
+    </div>
+
+    <!-- <div class="interactive-buttons">
+        <button id="change-video">Change Video</button>
+    </div>
+</div>
+</section> -->
+
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/your_instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/your_twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.twitch.tv/your_twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://discord.gg/your_discord"><i class="fab fa-discord"></i></a>
+    </div>
+</footer>
+<script>
+  const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+</script>
+</body>
+</html>

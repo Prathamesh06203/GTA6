@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW _US</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+            background-image: url("/SDL/imagees/back.jpg");
+            /* Gaming themed background image */
+            background-color: beige;
+            background-size: cover;
+            /* Cover the entire viewport */
+            background-position: center;
+            /* Center the background image */
+            height: 100vh;
+            /* Set the height of the body to the viewport height */
+            display: flex;
+            /* Use flexbox for vertical alignment */
+            /* Center content vertically */
+            flex-direction: column;
+            /* Stack elements vertically */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 350px;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .navbar-nav .nav-link {
+
+            margin-right: 20px;
+            font-weight: normal;
+            position: relative;
+            transition: font-weight 0.3s, color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffc107;
+            transition: width 0.5s;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+            animation: moveUp 2s infinite;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            border-color: rgb(197, 11, 36);
+        }
+
+        .solid-box {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid rgb(139, 12, 12);
+            transition: transform 0.3s ease;
+        }
+
+        .solid-box:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">GTA 6</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/ML/train.csv/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="character.html">Character</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Review_US.html">Review_uS</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index1.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Login</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="color: rgb(136, 255, 0);">For Reviewing Us</h1>
+
+        <h2>Click Me!</h2>
+        <!-- Animation example -->
+        <div class="solid-box">
+            <a href="https://forms.visme.co/formsPlayer/g7qrnovo-contuatus">Review_US</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
